@@ -46,4 +46,3 @@ Run `python tools/verify_import.py` to verify that the imported firmware bytes m
 - [云台-全向轮底盘机器人](https://github.com/JiraiyaMr/gimbal-omniwheel-robot)
 - [云台-舵轮底盘机器人](https://github.com/JiraiyaMr/gimbal-swerve-robot)
 
-[Original portfolio and source history](https://github.com/JiraiyaMr/robot-control-portfolio)
