@@ -1,0 +1,8 @@
+*.o
+*.obj
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+__pycache__/
