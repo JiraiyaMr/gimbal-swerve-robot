@@ -1,5 +1,9 @@
-# Personal contribution record
+# Personal contribution
 
-The owner reports work on robot application control, motor feedback, PID tuning, communication, and system integration. The source also includes team framework, vendor libraries, and attributed upstream algorithms.
+Hexi Liu was responsible for control software design, development, and debugging for the gimbal-equipped swerve-drive robot, building on the team’s existing framework.
 
-To connect an application claim to evidence, record the exact implemented or modified modules, tests personally performed, and related commit/video/log. File presence alone is not proof of individual authorship. Keep original author headers and describe integration separately from original algorithm development.
+## 个人贡献
+
+基于队内框架，负责云台-舵轮底盘机器人的控制软件设计、开发与调试。
+
+Original team, vendor, and upstream attribution is retained in the source files.
