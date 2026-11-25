@@ -1,5 +1,11 @@
 # Demonstration and testing
 
-The firmware and task configuration are available for source review. A recording or measurement should identify the robot, board role, firmware commit, enabled tasks, and test conditions.
+The recordings below show the physical robot in operation. The archived firmware configuration is documented separately in the build and configuration notes.
 
-Useful evidence includes chassis translation/rotation, gimbal motion, chassis–gimbal coordination, board communication, and source-linked measurements. No new video, measured tracking accuracy, or full-system execution result is claimed by this repository split.
+## Video recordings
+
+| Demonstration | Playback | Repository file |
+| --- | --- | --- |
+| Independent chassis motion | [Watch video](https://jiraiyamr.github.io/assets/videos/swerve/chassis-motion.mp4) | [MP4](../media/videos/chassis-motion.mp4) |
+| Full robot motion | [Watch video](https://jiraiyamr.github.io/assets/videos/swerve/full-robot-motion.mp4) | [MP4](../media/videos/full-robot-motion.mp4) |
+| Shooting | [Watch video](https://jiraiyamr.github.io/assets/videos/swerve/shooting.mp4) | [MP4](../media/videos/shooting.mp4) |

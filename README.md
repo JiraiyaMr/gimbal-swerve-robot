@@ -1,5 +1,15 @@
 # 云台-舵轮底盘机器人
 
+## Demonstration videos
+
+| Demonstration | Playback | Repository file |
+| --- | --- | --- |
+| Independent chassis motion | [Watch video](https://jiraiyamr.github.io/assets/videos/swerve/chassis-motion.mp4) | [MP4](media/videos/chassis-motion.mp4) |
+| Full robot motion | [Watch video](https://jiraiyamr.github.io/assets/videos/swerve/full-robot-motion.mp4) | [MP4](media/videos/full-robot-motion.mp4) |
+| Shooting | [Watch video](https://jiraiyamr.github.io/assets/videos/swerve/shooting.mp4) | [MP4](media/videos/shooting.mp4) |
+
+[View the project on my homepage](https://jiraiyamr.github.io/#projects).
+
 ## Gimbal-equipped swerve-drive robot
 
 Standalone robot project from Hexi Liu’s RoboMaster development portfolio. The project includes chassis and gimbal application code, robot-level command handling, and CAN-based board communication. The uploaded firmware remains an archived board/configuration snapshot.
