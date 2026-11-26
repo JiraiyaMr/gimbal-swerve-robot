@@ -31,12 +31,6 @@ Four-module drive-speed decomposition, atan2 steering-angle calculation, and cas
 | Task creation | [freertos.c](firmware/Core/Src/freertos.c) |
 | Keil project | [WUST_Frame_Two.uvprojx](firmware/MDK-ARM/WUST_Frame_Two.uvprojx) |
 
-## Supplied configuration
-
-Enabled: chassis, steering, and CAN board-command reception tasks, plus the generated default task. Gimbal, robot-command, and INS task creation is commented out. This snapshot is configured for a chassis/steering-side role.
-
-Code availability and task activation are documented separately. This repository does not claim that the archived startup configuration runs every robot subsystem simultaneously.
-
 ## Build and verification
 
 Open the Keil project with ARMCC 5.06 update 5 (build 528) and the corresponding STM32F4 device pack. See [build notes](docs/build.md) and [configuration notes](docs/configuration.md).
@@ -47,8 +41,6 @@ Run `python tools/verify_import.py` to verify that the imported firmware bytes m
 
 - [Personal contribution record](docs/contributions.md)
 - [Demonstration and testing](docs/evidence.md)
-- [Source provenance](docs/provenance.md)
-- [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 ## Related robot projects
 
