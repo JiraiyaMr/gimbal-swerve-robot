@@ -4,4 +4,4 @@ Enabled: chassis, steering, and CAN board-command reception tasks, plus the gene
 
 Four-module drive-speed decomposition, atan2 steering-angle calculation, and cascaded steering control. Gimbal source includes yaw/pitch control and CAN motor commands.
 
-All three robot projects retain a shared framework. The existence of additional chassis/steering code in a snapshot does not prove that every variant is configured or used on this robot.
+
