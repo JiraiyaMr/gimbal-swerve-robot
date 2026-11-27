@@ -1,22 +1,3 @@
-/**
-  **************wust*********************************************************
-  * @file       chassis.c/h
-  * @brief      µ×ÅÌÈÎÎñ
-  * @author     wwy
-  @verbatim
-  ==============================================================================
-  1.
-  2.
-	ps:
-  ==============================================================================
-  @endverbatim
-  ******************************************************************************
-  */
-
-/**
- * @brief Í·ÎÄ¼þÉùÃ÷´¦
- * @param
- */
 #include "chassis.h"
 #include "math.h"
 #include "remote_control.h"
@@ -33,7 +14,7 @@ int r;
 int before_ctrl_mode = ctrl_err;
 //int before_pid_mode = PID_MODE_Err;
 
-/* --------------------------ÈÎÎñ²ã------------------------- */
+/* --------------------------ä»»åŠ¡å±‚------------------------- */
 void chassis_task (void const * argument)
 {
 	chassis_Init();
@@ -45,7 +26,7 @@ void chassis_task (void const * argument)
 		osDelay(2);
 	}
 }
-/* --------------------------¿ØÖÆ²ã------------------------- */
+/* --------------------------æŽ§åˆ¶å±‚------------------------- */
 void RC_Ctrl (void)
 {
 //	chassis_t.chassis_RC = get_remote_control_point();
@@ -113,8 +94,8 @@ void KEY_Ctrl (void)
 	
 }
 
-/* --------------------------¹¦ÄÜ²ã------------------------- */
-//µ×ÅÌÐÅÏ¢³õÊ¼»¯
+/* --------------------------åŠŸèƒ½å±‚------------------------- */
+//åº•ç›˜ä¿¡æ¯åˆå§‹åŒ–
 void chassis_Init(void)
 {
 	int i;
@@ -125,7 +106,7 @@ void chassis_Init(void)
 	chassis_cmd_from_robots = SubRegister("chassis_cmd",sizeof(Robot_chassis_t));
 }
 
-//»ñÈ¡µ×ÅÌµç»úÐÅÏ¢
+//èŽ·å–åº•ç›˜ç”µæœºä¿¡æ¯
 void get_chassis_data(chassis_move_t *chassis)
 {
 	chassis->chassis_move_t[CHAS_LF].motor_data = get_CHAS_LF_motor_measure_point();
@@ -139,7 +120,7 @@ void get_chassis_data(chassis_move_t *chassis)
 	chassis->chassis_move_t[CHAS_RB].speed = chassis->chassis_move_t[CHAS_RB].motor_data->speed_rpm;
 }
 
-//½âËãµ×ÅÌ¸÷µç»úµÄËÙ¶È
+//è§£ç®—åº•ç›˜å„ç”µæœºçš„é€Ÿåº¦
 void resolving_speed(chassis_move_t *chassis_t)
 {
 	float theta = atan(1.0/1.0);
@@ -188,10 +169,10 @@ void resolving_speed(chassis_move_t *chassis_t)
 //	chassis_t->chassis_move_t[3].speed_set = vx - vy +  MOTOR_DISTANCE_TO_CENTER * wz;
 }
 
-//ÄæÔË¶¯½âËãµ×ÅÌËÙ¶È
+//é€†è¿åŠ¨è§£ç®—åº•ç›˜é€Ÿåº¦
 
 
-//ÉèÖÃµ×ÅÌµç»úPID²ÎÊý
+//è®¾ç½®åº•ç›˜ç”µæœºPIDå‚æ•°
 void set_chassis_pid_parameter (chassis_move_t *chassis)
 {
 	int i;
@@ -215,7 +196,7 @@ void set_chassis_pid_parameter (chassis_move_t *chassis)
 	}
 }
 
-//¼ÆËãµç»úµÄÊäÈëµçÁ÷
+//è®¡ç®—ç”µæœºçš„è¾“å…¥ç”µæµ
 void count_output(chassis_move_t *chassis)
 {
 	chassis->chassis_move_t[CHAS_LF].give_current = pid_calc(&chassis->chassis_speed_pid[CHAS_LF],
